@@ -23,6 +23,6 @@ $("div.owl-carousel").owlCarousel({
   },
 });
 
-function ajouter(){
+function ajouter_panier(){
   alert("l'article est dans le panier");
 }
