@@ -11,6 +11,7 @@ body {
   color: rgb(247, 243, 243);
   font-family: "Italianno", cursive;
   /* font-family: 'Lobster', cursive; */
+  padding: 0;
   font-size: 55px;
   font-weight: bolder;
   font-style: oblique;
@@ -24,7 +25,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: auto;
+  height: 125px;
 }
 .position_fixe {
   position: fixed;
@@ -32,9 +33,7 @@ body {
   top: 0;
   z-index: 2;
 }
-.corps {
-  padding-top: 220px;
-}
+
 .item1 {
   width: auto;
 }
@@ -46,7 +45,7 @@ body {
   border: 1px solid rgb(161, 235, 26);
   border-radius: 5px;
   padding: 2px 4px 2px 4px;
-  height: 35px;
+  height: 30px;
   box-shadow: 1px 1px 8px #6b705c;
 }
 a.bouton {
@@ -56,7 +55,7 @@ a.bouton {
   background-color: rgb(161, 235, 26);
   border: 1px solid rgb(161, 235, 26);
   border-radius: 5px;
-  padding: 10px 8px 10px 8px;
+  padding: 5px;
   box-shadow: 1px 1px 8px #6b705c;
 }
 a.bouton:hover {
@@ -87,14 +86,12 @@ input {
 
 .navbar-nav .dropdown-menu a {
   background-color: white;
-  font-size: auto;
   width: 100%;
   text-align: center;
 }
 
 .navbar-nav .dropdown-menu a:hover {
   background-color: rgb(161, 235, 26);
-  font-size: auto;
   width: 100%;
 }
 
@@ -107,7 +104,7 @@ a.nav-link {
 a.nav-link:hover {
   color: yellow;
   font-weight: bold;
-  text-shadow: 1px 1px 6px blakc;
+  text-shadow: 1px 1px 6px black;
 }
 
 .navbar.navbar-expand-md .navbar-toggler-icon {
@@ -120,12 +117,23 @@ main {
   padding: 20px;
   text-align: center;
 }
+.corps {
+  padding-top: 170px;
+}
+.mentions {
+  text-align: left;
+}
+.titremoyen {
+  color: #5ec40a;
+  font-size: 24px;
+}
 .fondvert {
   padding: 20px;
   text-align: center;
   background-color: rgb(115, 124, 82);
+  width: auto;
+  height: auto;
 }
-
 .fondblanc {
   padding: 20px;
   text-align: center;
@@ -150,19 +158,41 @@ h1 {
   display: flex;
   height: auto;
 }
+.tailleimage {
+  width: 60%;
+}
 .image {
   border: 1px solid lightgrey;
   flex: 0 1 55%;
-}
-.tailleimage {
-  width: 60%;
 }
 .detail {
   border: 1px solid lightgrey;
   padding: 10px;
   flex: 2 1 45%;
 }
-
+.panier {
+  display: flex;
+  justify-content: space-between;
+}
+.panier2 {
+  display: flex;
+}
+/* carte google responsive */
+#carte {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+#carte iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding: 2%;
+}
+/* corps de la page suite */
 .margintop {
   margin-top: 10px;
 }
@@ -170,18 +200,20 @@ h1 {
 .prix {
   font-size: 20px;
 }
-.carte {
-  width: 100%;
-}
+
 .magasin {
   padding-left: 5px;
 }
+.mentions a {
+  color: #5ec40a;
+}
+
 /* pied de page */
 footer {
   background-color: rgb(161, 235, 26);
   margin: 0 auto;
 }
-li {
+footer li {
   display: inline;
 }
 .piedpage {
@@ -205,14 +237,25 @@ a.pied:hover {
 
 /* responsive */
 @media screen and (max-width: 1024px) {
+  .logo {
+    color: rgb(247, 243, 243);
+    font-family: "Italianno", cursive;
+    /* font-family: 'Lobster', cursive; */
+    padding: 0;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 1px 1px 3px rgb(68, 139, 2);
+  }
   .conteneur {
     /* la zone de contenu blanche passe en pleine largeur donc 100% */
     width: 100%;
     /* on a la propriété min-width:700px  plus haut qui nous bloque donc on l'annule en la mettant à 0px */
     min-width: 0px;
     display: flex;
-    flex-direction: column;
-    height: 250px;
+    padding: 0;
+    justify-content: space-around;
+    height: 120px;
   }
   .navbar-nav {
     background-color: rgb(161, 235, 26);
@@ -228,18 +271,15 @@ a.pied:hover {
   .bouton {
     margin: auto 5px 15px 2px;
   }
-  .corps {
-    padding-top: 300px;
-  }
 }
 /* 900px */
 @media screen and (max-width: 900px) {
-  li {
+  footer li {
     display: block;
   }
   .item2 {
     margin: 3px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   a.pied {
     color: white;
@@ -251,9 +291,52 @@ a.pied:hover {
 }
 /* 798px */
 @media screen and (max-width: 768px) {
+  .logo {
+    color: rgb(247, 243, 243);
+    font-family: "Italianno", cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 1px 1px 3px rgb(68, 139, 2);
+  }
+  .conteneur {
+    width: 100%;
+    min-width: 0px;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 180px;
+  }
+  .bouton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: rgb(161, 235, 26);
+    border: 1px solid rgb(161, 235, 26);
+    border-radius: 5px;
+    padding: 1px 1px 1px 1px;
+    height: 25px;
+    box-shadow: 1px 1px 8px #6b705c;
+  }
+  a.bouton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(161, 235, 26);
+    border: 1px solid rgb(161, 235, 26);
+    border-radius: 5px;
+    padding: 1px 2px 1px 2px;
+    box-shadow: 1px 1px 8px #6b705c;
+  }
   .navbar-nav {
     background-color: rgb(161, 235, 26);
     text-align: center;
+  }
+  .corps {
+    padding-top: 220px;
   }
 }
 /* 720px */
@@ -270,8 +353,40 @@ a.pied:hover {
     height: 300px;
   }
 }
-/* 480px */
-@media screen and (max-width: 480px) {
+
+/* 461px */
+@media screen and (max-width: 461px) {
+  .logo {
+    color: rgb(247, 243, 243);
+    font-family: "Italianno", cursive;
+    /* font-family: 'Lobster', cursive; */
+    font-size: 25px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 1px 1px 3px rgb(68, 139, 2);
+  }
+
+  .bouton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    color: black;
+    background-color: rgb(161, 235, 26);
+    border: 1px solid rgb(158, 240, 6);
+    border-radius: 5px;
+    padding: 1px 1px 1px 1px;
+    height: 25px;
+    box-shadow: 1px 1px 8px #6b705c;
+  }
+  a.bouton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+    background-color: rgb(161, 235, 26);
+    border: 1px solid rgb(158, 240, 6);
+    border-radius: 5px;
+    padding: 1px 2px 1px 2px;
+    box-shadow: 1px 1px 8px #6b705c;
+  }
   .articles {
     border: 1px solid lightgray;
     display: block;
@@ -281,6 +396,6 @@ a.pied:hover {
   .detail {
     border: 1px solid lightgray;
     padding: 10px;
-    height: 300px;
+    height: 100%;
   }
 }

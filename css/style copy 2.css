@@ -11,6 +11,7 @@ body {
   color: rgb(247, 243, 243);
   font-family: "Italianno", cursive;
   /* font-family: 'Lobster', cursive; */
+  padding: 0;
   font-size: 55px;
   font-weight: bolder;
   font-style: oblique;
@@ -24,7 +25,7 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: auto;
+  height: 125px;
 }
 .position_fixe {
   position: fixed;
@@ -44,7 +45,7 @@ body {
   border: 1px solid rgb(161, 235, 26);
   border-radius: 5px;
   padding: 2px 4px 2px 4px;
-  height: 35px;
+  height: 30px;
   box-shadow: 1px 1px 8px #6b705c;
 }
 a.bouton {
@@ -54,7 +55,7 @@ a.bouton {
   background-color: rgb(161, 235, 26);
   border: 1px solid rgb(161, 235, 26);
   border-radius: 5px;
-  padding: 10px 8px 10px 8px;
+  padding: 5px;
   box-shadow: 1px 1px 8px #6b705c;
 }
 a.bouton:hover {
@@ -117,7 +118,7 @@ main {
   text-align: center;
 }
 .corps {
-  padding-top: 220px;
+  padding-top: 200px;
 }
 .fondvert {
   padding: 20px;
@@ -224,14 +225,25 @@ a.pied:hover {
 
 /* responsive */
 @media screen and (max-width: 1024px) {
+  .logo {
+    color: rgb(247, 243, 243);
+    font-family: "Italianno", cursive;
+    /* font-family: 'Lobster', cursive; */
+    padding: 0;
+    font-size: 35px;
+    font-weight: bolder;
+    font-style: oblique;
+    text-shadow: 1px 1px 3px rgb(68, 139, 2);
+  }
   .conteneur {
     /* la zone de contenu blanche passe en pleine largeur donc 100% */
     width: 100%;
     /* on a la propriété min-width:700px  plus haut qui nous bloque donc on l'annule en la mettant à 0px */
     min-width: 0px;
     display: flex;
-    flex-direction: column;
-    height: 250px;
+    padding: 0;
+    justify-content: space-around;
+    height: 120px;
   }
   .navbar-nav {
     background-color: rgb(161, 235, 26);
@@ -248,7 +260,7 @@ a.pied:hover {
     margin: auto 5px 15px 2px;
   }
   .corps {
-    padding-top: 300px;
+    padding-top: 180px;
   }
 }
 /* 900px */
@@ -258,7 +270,7 @@ a.pied:hover {
   }
   .item2 {
     margin: 3px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
   a.pied {
     color: white;
