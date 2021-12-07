@@ -22,3 +22,7 @@ $("div.owl-carousel").owlCarousel({
     },
   },
 });
+
+function ajouter(){
+  alert("l'article est dans le panier");
+}
