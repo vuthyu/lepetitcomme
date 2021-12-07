@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <title>lepetitcommerce</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jquery-ui/jquery-ui.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jquery-ui/jquery-ui.structure.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="js/jquery-ui/jquery-ui.theme.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="js/OwlCarousel2/dist/assets/owl.carousel.css"
+    />
+    <link
+      rel="stylesheet"
+      href="js/OwlCarousel2/dist/assets/owl.theme.default.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+      integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <!-- début de l'en-tête -->
+      <div class="position_fixe">
+        <div class="conteneur">
+          <div class="item1">
+            <p class="logo font-effect-fire">Le Petit COMMERCE</p>
+            <p>
+              <a class="bouton" href="">Français</a>
+              <a class="bouton" href="">English</a>
+            </p>
+          </div>
+
+          <div class="item1">
+            <form>
+              <input
+                type="text"
+                id="rechercher"
+                placeholder=" Rechercher un article"
+                name="rechercher"
+              />
+              <button class="bouton" type="submit" title="rechercher">
+                RECHERCHER
+              </button>
+            </form>
+          </div>
+
+          <div class="item1">
+            <a class="bouton" href="moncompte.html">Mon compte</a>
+            <a class="bouton" href="panier.html">PANIER</a>
+          </div>
+        </div>
+        <!-- fin de l'en-tête -->
+
+        <!-- Barre de navigation -->
+        <div class="menu_nav">
+          <nav
+            class="mb-4 navbar navbar-expand-md responsive justify-content-end"
+          >
+            <!-- Ligne avec inscription Menu + Bouton responsive-->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarTogglerDemo01"
+              aria-controls="navbarTogglerDemo01"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Mettre la liste ul dans la navbar-collapse -->
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <!-- Passage de l'élément ul en navbar-nav soit flex-direction: column -->
+              <!-- <ul class="nav justify-content-center"> -->
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href=""
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Hommes
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="hommes_pantalons.html">
+                      Pantalons
+                    </a>
+                    <a class="dropdown-item" href="hommes_tshirts.html">
+                      T-Shirt
+                    </a>
+                    <a class="dropdown-item" href="hommes_manteaux.html">
+                      Manteaux
+                    </a>
+                    <a class="dropdown-item" href="hommes_chemises.html">
+                      Chemises
+                    </a>
+                    <a class="dropdown-item" href="hommes_pulls.html">
+                      Pulls
+                    </a>
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href=""
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Femmes
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="femmes_pantalons.html"
+                      >Pantalons</a
+                    >
+                    <a class="dropdown-item" href="femmes_pulls.html">Pulls</a>
+                    <a class="dropdown-item" href="femmes_manteaux.html"
+                      >Manteaux</a
+                    >
+                    <a class="dropdown-item" href="femmes_jupes.html">Jupes</a>
+                    <a class="dropdown-item" href="femmes_robes.html">Robes</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="actualites.html">Actualités</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    data-toggle="dropdown"
+                    href="boutique.html"
+                    role="button"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                    >Boutique
+                  </a>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="qui_sommes_nous.html"
+                      >Qui Sommes-nous ?
+                    </a>
+                    <a class="dropdown-item" href="recrutement.html">
+                      Recrutement
+                    </a>
+                    <a class="dropdown-item" href="evenements.html">
+                      Evènements
+                    </a>
+                    <a class="dropdown-item" href="presse.html"> Presse </a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="points_de_vente.html"
+                    >Points de vente</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="reservations.html">Réservations</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- fin barre de navigation -->
+    </header>
+
+    <!-- corps de la page-->
+    <main class="fondblanc">
+      <div class="corps">
+        <h1>Conditions générales de vente</h1>
+        <div class="mentions">
+          <p class="titremoyen">Article 1er : Objet</p>
+          <p>
+            Les présentes conditions de vente visent à définir les relations
+            contractuelles entre la société UVISITE, dont le nom commercial est
+            UVISITE , dont le siège social est situé 5 Avenue Anatole France
+            75007 Paris, immatriculée au registre du commerce et des sociétés de
+            Paris sous le numéro 421 938 861, ci après désigné "le vendeur " ou
+            "UVISITE" et l’acheteur défini comme étant utilisateur du site
+            www.uvisite.free.fr et acceptant les présentes conditions générales
+            de vente. L’acquisition d’un bien ou d’un service à travers le
+            présent site implique une acceptation sans réserve par l’acheteur
+            des présentes conditions générales de vente. Ces conditions
+            générales de vente prévaudront sur toutes autres conditions
+            générales ou particulières non expressément agréées par la société
+            UVISITE. UVISITE se réserve de pouvoir modifier ses conditions de
+            vente à tout moment. Dans ce cas, les conditions applicables seront
+            celles en vigueur à la date de la commande par l’acheteur.
+          </p>
+
+          <p class="titremoyen">
+            Article 2 : Caractéristiques des biens et services proposés
+          </p>
+          <p>
+            Les produits et services offerts sont ceux qui figurent sur le site
+            www.uvisite.free.fr . Les articles vendus par UVISITE sont décrits
+            et présentés avec la plus grande exactitude.
+          </p>
+          <p>
+            Les offres de produits et de prix sont valables dans la limite des
+            stocks disponibles. En cas d'indisponibilité des produits après
+            passation de la commande, le client sera informé par e-mail ou par
+            téléphone ou courrier. UVISITE lui proposera le remplacement du
+            produit commandé par un produit similaire à prix identique, ou
+            l'attente du retour en stock. A défaut d'acceptation, la commande
+            sera annulée ; dans le cas où le règlement ait déjà été encaissé, le
+            client sera remboursé dans un délai maximum de 30 jours.
+          </p>
+
+          <p class="titremoyen">Article 3 : Tarifs</p>
+          <p>
+            Les prix figurant sur le site www.uvisite.free.fr sont des prix TTC
+            en euro tenant compte de la TVA applicable au jour de la commande;
+            tout changement du taux pourra être répercuté sur le prix des
+            produits. Les prix indiqués ne comprennent pas les frais de
+            traitement des commandes, de transport et de livraison pour autant
+            qu’elles aient lieu dans les zones géographiques prévues ci-après.
+            Les frais de port sont systématiquement indiqués au niveau du panier
+            de commande, et incluent, outre le transport, les frais de
+            préparation et d’emballage. Le transfert de propriété des
+            marchandises au profit du client est suspendu jusqu'au paiement
+            intégral du prix. En cas de paiement différé, UVISITE conservera la
+            propriété des marchandises jusqu'au paiement complet de celles-ci
+            dans le cadre des conditions établies contractuellement, même en cas
+            de procédure collective ouverte à l'encontre du client, et ce
+            conformément aux articles L.621-122 et suivants du commerce.
+          </p>
+
+          <p class="titremoyen">Article 4 : Aire géographique</p>
+          <p>
+            La vente en ligne des produits et services présentés dans le site
+            www.uvisite.free.fr est réservée aux acheteurs de l’Union
+            Européenne, sous réserve que l’acheteur dispose d’une adresse
+            postale effective reconnue. Tout acheteur ne résidant pas dans
+            l’Union Européenne et souhaitant passer commande, devra en faire la
+            demande au préalable en vue d’obtenir une cotation pour les frais de
+            transport. Toute commande passée sans respecter ce processus sera
+            systématiquement rejetée.
+          </p>
+
+          <p class="titremoyen">Article 5 : Commandes</p>
+          <p>
+            L’acheteur, qui souhaite acheter un produit ou un service doit
+            obligatoirement :
+          </p>
+          <ul>
+            <li>
+              Réaliser son achat en ligne en donnant toutes les références des
+              produits choisis;
+            </li>
+            <li>Valider sa commande après l’avoir vérifiée;</li>
+            <li>Effectuer le paiement dans les conditions prévues;</li>
+            <li>Confirmer sa commande et son règlement.</li>
+          </ul>
+          <p>
+            La confirmation de la commande entraîne acceptation des présentes
+            conditions de vente, la reconnaissance d’en avoir parfaite
+            connaissance et la renonciation à se prévaloir de ses propres
+            conditions d’achat ou d’autres conditions.
+          </p>
+
+          <p>
+            L’ensemble des données fournies et la confirmation enregistrée
+            vaudront preuve de la transaction. La confirmation vaudra pour
+            acceptation des opérations effectuées.
+          </p>
+          <p class="titremoyen">Article 6 : Rétractation</p>
+          <p>
+            Vous disposez d´un délai de 30 jours francs à compter de la
+            réception de vos produits pour exercer votre droit de rétractation
+            auprès de UVISITE , sans avoir à justifier de motifs ni à payer de
+            pénalité.
+          </p>
+
+          <p>
+            En cas d´exercice du droit de rétractation dans le délai susvisé,
+            seul le prix du ou des produits achetés et les frais d´envoi seront
+            remboursés; les frais de retour restant à votre charge.
+          </p>
+
+          <p>
+            Nous vous invitons à prendre contact avec notre service clients par
+            email à contact@uvisite.free.fr.com pour obtenir la procédure retour
+            à suivre.
+          </p>
+
+          <p>
+            Remettez le produit en parfait état, non abîmé, sans aucun programme
+            ni application installés, dans son emballage d'origine et accompagné
+            de tous ses accessoires. Joignez si possible à votre colis la fiche
+            retour qui vous sera transmise lors de votre demande.
+          </p>
+
+          <p>
+            Dès la réception du retour de votre article, vous serez avertis par
+            retour d'e-mail de la bonne réception de votre colis. UVISITE
+            s'engage à vous rembourser sous 14 jours le montant de votre
+            commande. Le remboursement s’effectue frais d'envoi compris et en
+            fonction du mode de paiement utilisé lors de la commande. Les frais
+            de retour restant à votre charge.
+          </p>
+
+          <p>
+            Nous vous rappelons que si l'article est renvoyé incomplet ou
+            endommagé à UVISITE, une décote de son prix sera appliquée selon le
+            diagnostic réalisé par le Service Après Vente. UVISITE justifiera
+            auprès du client l’application de cette décote en lui communiquant
+            un document dressé par son Service Après Ventre. Les accessoires
+            neufs (webcam, sacoches, clés usb...) doivent être retournés dans
+            leur emballage encore scellés, dans le cas contraire, aucun échange
+            ou remboursement ne pourra être réclamé.
+          </p>
+
+          <p class="titremoyen">Article 7 : Modalités de paiement</p>
+          <p>Le prix est exigible à la commande.</p>
+          <p>
+            Les paiements seront effectués par les moyens de paiement suivants :
+          </p>
+          <ul>
+            <li>Carte Bancaire</li>
+            <li>
+              Carte Bancaire en 3 fois sans frais par l'intermédiaire de
+              l'organisme financier Codifis
+            </li>
+            <li>
+              Carte Bancaire en 4 fois sans frais par l'intermédiaire de
+              l'organisme financier Codifis
+            </li>
+            <li>Paypal</li>
+            <li>Virement bancaire depuis la France et l’étranger</li>
+            <li>
+              Mandat Administratif (uniquement pour les mairies, administrations
+              publiques ou collectivités)
+            </li>
+          </ul>
+
+          <p class="titremoyen">Article 8 : Défaut de paiement</p>
+          <p>
+            UVISITE se réserve le droit de refuser d'effectuer une livraison ou
+            d'honorer une commande émanant d'un consommateur qui n'aurait pas
+            réglé totalement ou partiellement une commande précédente ou avec
+            lequel un litige de paiement serait en cours d'administration.
+          </p>
+
+          <p class="titremoyen">Article 9 : Vérification des paiements</p>
+          <p>
+            UVISITE contrôle toutes les commandes qui ont été validées sur son
+            site. Ces contrôles visent à protéger UVISITE de pratiques abusives
+            opérées par des fraudeurs.
+          </p>
+
+          <p>
+            Nos services pourront être amenés à vous demander toutes les pièces
+            nécessaires au déblocage de votre commande : justificatifs de
+            domicile ou de débit à votre nom, ou encore justificatif de domicile
+            au nom de la personne indiquée pour l'adresse de livraison etc...
+            Ces éventuelles demandes seront faites par courrier électronique :
+          </p>
+          <ul>
+            <li>
+              Pour une commande qui présente une adresse de livraison différente
+              de l'adresse de facturation
+            </li>
+            <li>Pour les nouveaux clients</li>
+            <li>Pour une commande supérieure à 150 Euros</li>
+          </ul>
+
+          <p class="titremoyen">Article 10 : Livraison</p>
+          <p>
+            UVISITE a choisi ses prestataires logistiques pour le sérieux et la
+            qualité de leurs services. Nous sommes ainsi en mesure de vous
+            proposer 3 types de services de livraison (pour la France
+            Métropolitaine) afin de vous apporter la prestation la mieux adaptée
+            à vos besoins:
+          </p>
+          <table class="table table-bordered">
+            <tr>
+              <th>Transporteurs</th>
+              <th>Tarifs</th>
+              <th>Délais de livraison</th>
+            </tr>
+            <tr>
+              <td>Chronopost</td>
+              <td>Inférieur à 1KG : 9,99 € / supérieur à 1kg : 19,99 €</td>
+              <td>Dans la journée / 24 h</td>
+            </tr>
+            <tr>
+              <td>Mondial Relais</td>
+              <td>Inférieur à 1KG : 4,99 € / supérieur à 1kg : 9,99 €</td>
+              <td>2 à 3 jours</td>
+            </tr>
+            <tr>
+              <td>Relais Colis</td>
+              <td>Inférieur à 1KG : 3,99 € / supérieur à 1kg : 6,99 €</td>
+              <td>2 à 5 jours</td>
+            </tr>
+          </table>
+          <p>Le délais s'applique à la validation de la commande.</p>
+
+          <p class="titremoyen">Article 11 : Garantie</p>
+          <p>
+            On distingue 2 types de garanties : La garantie commerciale proposée
+            par UVISITE et la garantie légale.
+          </p>
+
+          <p>Garantie commerciale</p>
+
+          <p>
+            Tous les produits d'occasion reconditionnés par UVISITE bénéficient
+            d’une garantie commerciale dont la durée est mentionnée précisément
+            sur chaque fiche produit. Pendant la période de garantie dont
+            bénéficie votre produit, UVISITE prend en charge, dans ses ateliers,
+            la garantie, l’échange ou la réparation de votre article.
+          </p>
+
+          <p>
+            Cette garantie commerciale est due par UVISITE à condition que :
+          </p>
+          <ul>
+            <li>
+              Le défaut rende la chose impropre à l’usage auquel on la destine.
+            </li>
+            <li>
+              Le défaut diminue tellement l’usage auquel est destiné le produit,
+              que l’acheteur ne l’aurait pas acquis, ou n’en aurait donné qu’un
+              moindre prix s’il avait connu ce défaut.
+            </li>
+            <li>
+              L'action soit intentée dans un bref délai à partir de la
+              découverte du défaut.
+            </li>
+            <li>
+              Le défaut du produit soit caché (article 1641 à 1649 du code
+              civil).
+            </li>
+          </ul>
+          <br />
+          <p>
+            La garantie commerciale de l'ensemble des produits vendus par
+            UVISITE se limite à l'aspect matériel (hardware) et ne couvre en
+            aucun cas l'aspect logiciel (software).
+          </p>
+          <br />
+          <p>Garantie légale</p>
+          <p>
+            Article L. 211-4 : « Le vendeur est tenu de livrer un bien conforme
+            au contrat et répond des défauts de conformité existant lors de la
+            délivrance. Il répond également des défauts de conformité résultant
+            de l'emballage, des instructions de montage ou de l'installation
+            lorsque celle-ci a été mise à sa charge par le contrat ou a été
+            réalisée sous sa responsabilité. »
+          </p>
+
+          <p>
+            Article L. 211-5 : « Pour être conforme au contrat, le bien doit :
+          </p>
+
+          <p>
+            Etre propre à l'usage habituellement attendu d'un bien semblable et,
+            le cas échéant :
+          </p>
+          <ul>
+            <li>
+              correspondre à la description donnée par le vendeur et posséder
+              les qualités que celui-ci a présentées à l'acheteur sous forme
+              d'échantillon ou de modèle ;
+            </li>
+
+            <li>
+              présenter les qualités qu'un acheteur peut légitimement attendre
+              eu égard aux déclarations publiques faites par le vendeur, par le
+              producteur ou par son représentant, notamment dans la publicité ou
+              l'étiquetage ;
+            </li>
+          </ul>
+
+          <p>
+            Ou présenter les caractéristiques définies d'un commun accord par
+            les parties ou être propre à tout usage spécial recherché par
+            l'acheteur, porté à la connaissance du vendeur et que ce dernier a
+            accepté
+          </p>
+
+          <p>
+            Article L. 211-7 : Les défauts de conformité qui apparaissent dans
+            un délai de six mois à partir de la délivrance du bien sont présumés
+            exister au moment de la délivrance, sauf preuve contraire. Le
+            vendeur peut combattre cette présomption si celle-ci n'est pas
+            compatible avec la nature du bien ou le défaut de conformité
+            invoqué.
+          </p>
+
+          <p>
+            Article L. 211-9 : En cas de défaut de conformité, l'acheteur
+            choisit entre la réparation et le remplacement du bien. Toutefois,
+            le vendeur peut ne pas procéder selon le choix de l'acheteur si ce
+            choix entraîne un coût manifestement disproportionné au regard de
+            l'autre modalité, compte tenu de la valeur du bien ou de
+            l'importance du défaut. Il est alors tenu de procéder, sauf
+            impossibilité, selon la modalité non choisie par l'acheteur.
+          </p>
+
+          <p>
+            Article L. 211-10 : Si la réparation et le remplacement du bien sont
+            impossibles, l'acheteur peut rendre le bien et se faire restituer le
+            prix ou garder le bien et se faire rendre une partie du prix.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <!--Pied de page-->
+    <footer>
+      <div class="piedpage">
+        <ul>
+          <li class="item2"><a class="pied" href="contact.html">CONTACT</a></li>
+          <li class="item2">
+            <a class="pied" href="mentionslegales.html">MENTIONS LEGALES</a>
+          </li>
+          <li class="item2">
+            <a class="pied" href="conditionsgenerales.html"
+              >CONDITIONS GENERALES</a
+            >
+          </li>
+          <li class="item2">
+            <a class="pied" href="plandusite.html">PLAN DU SITE</a>
+          </li>
+          <li class="item2">
+            <a class="pied" href="newsletters.html">NEWSLETTER</a>
+          </li>
+          <li class="item2">
+            <a class="pied" href="partager.html">PARTAGER</a>
+          </li>
+          <li class="item2">
+            <a class="pied" href="imprimer.html">IMPRIMER</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-ui/jquery-ui.min.js"></script>
+    <script src="js/OwlCarousel2/dist/owl.carousel.js"></script>
+    <script src="js/script1.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
