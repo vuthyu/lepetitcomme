@@ -23,6 +23,19 @@ $("div.owl-carousel").owlCarousel({
   },
 });
 
+// Ajout d'un article au panier
 function ajouter_panier() {
   alert("l'article est dans le panier");
 }
+
+// Recherche d'un article
+let article = [
+  "pantalons",
+  "chemises",
+  "t-shirts",
+  "robes",
+  "jupes",
+  "manteaux",
+  "pulls",
+];
+$(".produit").autocomplete({ source: article });

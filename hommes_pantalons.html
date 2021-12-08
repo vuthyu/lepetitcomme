@@ -18,20 +18,26 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="js/jquery-ui/jquery-ui.structure.min.css"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="js/jquery-ui/jquery-ui.theme.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
     />
     <link
       rel="stylesheet"
-      href="js/OwlCarousel2/dist/assets/owl.carousel.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="js/OwlCarousel2/dist/assets/owl.theme.default.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -56,21 +62,20 @@
           </div>
 
           <div class="item1">
-            <form>
+            <form id="formulaire">
               <input
                 type="text"
-                id="rechercher"
+                class="produit"
                 placeholder=" Rechercher un article"
                 name="rechercher"
+                title="valider pour confirmer la rechercher"
               />
-              <button class="bouton" type="submit" title="rechercher">
-                RECHERCHER
-              </button>
             </form>
           </div>
 
           <div class="item1">
             <a class="bouton" href="moncompte.html">Mon compte</a>
+            <a class="bouton" href="mescommandes.html">Mes commandes</a>
             <a class="bouton" href="panier.html">PANIER</a>
           </div>
         </div>
@@ -115,17 +120,17 @@
                     <a class="dropdown-item" href="hommes_pantalons.html">
                       Pantalons
                     </a>
-                    <a class="dropdown-item" href="hommes_tshirts.html">
-                      T-Shirt
-                    </a>
-                    <a class="dropdown-item" href="hommes_manteaux.html">
-                      Manteaux
-                    </a>
                     <a class="dropdown-item" href="hommes_chemises.html">
                       Chemises
                     </a>
+                    <a class="dropdown-item" href="hommes_tshirts.html">
+                      T-Shirt
+                    </a>
                     <a class="dropdown-item" href="hommes_pulls.html">
                       Pulls
+                    </a>
+                    <a class="dropdown-item" href="hommes_manteaux.html">
+                      Manteaux
                     </a>
                   </div>
                 </li>
@@ -203,35 +208,43 @@
         <div class="image">
           <img
             class="tailleimage"
-            src="./img/pantalon_hommes.jpg"
+            src="./img/pantalon_skinny_homme.jpg"
             alt="pantalon1"
           />
           <p class="prix">15,50€</p>
         </div>
         <div class="detail">
           <p>
-            Pantalon homme 100% conton, de très haute qualité fabriqué en
+            Pantalon skinny homme 100% conton, de très haute qualité fabriqué en
             France. Disponible en plusieurs tailles et coloris.
           </p>
-          <label for="couleur">Choix Couleur</label><br />
-          <select class="choixcouleur" name="couleur" id="couleur">
-            <option value="vert">vert</option>
-            <option value="marron">marron</option>
-            <option value="noir">noir</option></select
+          <label for="couleur_pantalon_skinny_homme">Choix Couleur</label><br />
+          <select
+            class="choixcouleur"
+            name="couleur"
+            id="couleur_pantalon_skinny_homme"
+          >
+            <option value="noir_pantalon_skinny_homme">noir</option>
+            <option value="gris_pantalon_skinny_homme">gris</option>
+            <option value="marron_pantalon_skinny_homme">marron</option></select
           ><br /><br />
-          <label for="taille">Choix taille</label><br />
-          <select class="choixtaille" name="taille" id="taille">
-            <option value="taille1">XS</option>
-            <option value="taille2">S</option>
-            <option value="taille3">M</option>
-            <option value="taille4">L</option>
-            <option value="taille5">XL</option></select
+          <label for="taille_pantalon_skinny_homme">Choix taille</label><br />
+          <select
+            class="choixtaille"
+            name="taille"
+            id="taille_pantalon_skinny_homme"
+          >
+            <option value="taille1_pantalon_skinny_homme">XS</option>
+            <option value="taille2_pantalon_skinny_homme">S</option>
+            <option value="taille3_pantalon_skinny_homme">M</option>
+            <option value="taille4_pantalon_skinny_homme">L</option>
+            <option value="taille5_pantalon_skinny_homme">XL</option></select
           ><br /><br />
 
           <button
             class="btn btn-success margintop"
             type="submit"
-            id="acheter"
+            id="acheter_pantalon_skinny_homme"
             onclick="ajouter_panier();"
           >
             Acheter
@@ -239,8 +252,60 @@
         </div>
       </div>
       <br />
-
       <!-- article 2 -->
+
+      <div class="articles">
+        <div class="image">
+          <img
+            class="tailleimage"
+            src="./img/pantalon_5poches_homme.jpg"
+            alt="jean_homme"
+          />
+          <p class="prix">24,99€</p>
+        </div>
+        <div class="detail">
+          <p>
+            Jean homme, de très haute qualité fabriqué en France. Disponible en
+            plusieurs tailles et coloris.
+          </p>
+          <label for="couleur_pantalon_5poches_homme">Choix Couleur</label
+          ><br />
+          <select
+            class="choixcouleur"
+            name="couleur"
+            id="couleur_pantalon_5poches_homme"
+          >
+            <option value="marron_pantalon_5poches_homme">marron</option>
+            <option value="noir_pantalon_5poches_homme">noir</option>
+            <option value="vert_pantalon_5poches_homme">vert</option>
+            <option value="bleu_pantalon_5poches_homme">bleu</option>
+            <option value="gris_pantalon_5poches_homme">girs</option></select
+          ><br /><br />
+          <label for="taille_pantalon_5poches_homme">Choix taille</label><br />
+          <select
+            class="choixtaille"
+            name="taille"
+            id="taille_pantalon_5poches_homme"
+          >
+            <option value="taille1_jpantalon_5poches_homme">XS</option>
+            <option value="taille2_pantalon_5poches_homme">S</option>
+            <option value="taille3_pantalon_5poches_homme">M</option>
+            <option value="taille4_pantalon_5poches_homme">L</option>
+            <option value="taille5_pantalon_5poches_homme">XL</option></select
+          ><br /><br />
+
+          <button
+            class="btn btn-success margintop"
+            type="submit"
+            id="acheter_pantalon_5poches_homme"
+            onclick="ajouter_panier();"
+          >
+            Acheter
+          </button>
+        </div>
+      </div>
+
+      <!-- article 3 -->
 
       <div class="articles">
         <div class="image">
@@ -256,25 +321,25 @@
             Jean homme, de très haute qualité fabriqué en France. Disponible en
             plusieurs tailles et coloris.
           </p>
-          <label for="couleur">Choix Couleur</label><br />
-          <select class="choixcouleur" name="couleur" id="couleur">
-            <option value="bleus">bleu</option>
-            <option value="noir">noir</option>
-            <option value="gris">girs</option></select
+          <label for="couleur_jean_hommes">Choix Couleur</label><br />
+          <select class="choixcouleur" name="couleur" id="couleur_jean_hommes">
+            <option value="bleus_jean_hommes">bleu</option>
+            <option value="noir_jean_hommes">noir</option>
+            <option value="gris_jean_hommes">girs</option></select
           ><br /><br />
-          <label for="taille">Choix taille</label><br />
-          <select class="choixtaille" name="taille" id="taille">
-            <option value="taille1">XS</option>
-            <option value="taille2">S</option>
-            <option value="taille3">M</option>
-            <option value="taille4">L</option>
-            <option value="taille5">XL</option></select
+          <label for="taille_jean_hommes">Choix taille</label><br />
+          <select class="choixtaille" name="taille" id="taille_jean_hommes">
+            <option value="taille1_jean_hommes">XS</option>
+            <option value="taille2_jean_hommes">S</option>
+            <option value="taille3_jean_hommes">M</option>
+            <option value="taille4_jean_hommes">L</option>
+            <option value="taille5_jean_hommes">XL</option></select
           ><br /><br />
 
           <button
             class="btn btn-success margintop"
             type="submit"
-            id="acheter"
+            id="acheter_jean_hommes"
             onclick="ajouter_panier();"
           >
             Acheter
@@ -311,15 +376,19 @@
         </ul>
       </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="js/OwlCarousel2/dist/owl.carousel.js"></script>
-    <script src="js/script1.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script1.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"

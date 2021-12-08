@@ -18,20 +18,26 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="js/jquery-ui/jquery-ui.structure.min.css"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="js/jquery-ui/jquery-ui.theme.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
     />
     <link
       rel="stylesheet"
-      href="js/OwlCarousel2/dist/assets/owl.carousel.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="js/OwlCarousel2/dist/assets/owl.theme.default.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -56,21 +62,19 @@
           </div>
 
           <div class="item1">
-            <form>
+            <form id="formulaire">
               <input
                 type="text"
-                id="rechercher"
+                class="produit"
                 placeholder=" Rechercher un article"
                 name="rechercher"
+                title="valider pour confirmer la rechercher"
               />
-              <button class="bouton" type="submit" title="rechercher">
-                RECHERCHER
-              </button>
             </form>
           </div>
-
           <div class="item1">
             <a class="bouton" href="moncompte.html">Mon compte</a>
+            <a class="bouton" href="mescommandes.html">Mes commandes</a>
             <a class="bouton" href="panier.html">PANIER</a>
           </div>
         </div>
@@ -115,17 +119,17 @@
                     <a class="dropdown-item" href="hommes_pantalons.html">
                       Pantalons
                     </a>
-                    <a class="dropdown-item" href="hommes_tshirts.html">
-                      T-Shirt
-                    </a>
-                    <a class="dropdown-item" href="hommes_manteaux.html">
-                      Manteaux
-                    </a>
                     <a class="dropdown-item" href="hommes_chemises.html">
                       Chemises
                     </a>
+                    <a class="dropdown-item" href="hommes_tshirts.html">
+                      T-Shirt
+                    </a>
                     <a class="dropdown-item" href="hommes_pulls.html">
                       Pulls
+                    </a>
+                    <a class="dropdown-item" href="hommes_manteaux.html">
+                      Manteaux
                     </a>
                   </div>
                 </li>
@@ -206,6 +210,7 @@
               id="nom"
               class="form-control"
               placeholder="Mon nom"
+              required
             />
           </div>
           <div class="col">
@@ -215,6 +220,7 @@
               id="prenom"
               class="form-control"
               placeholder="Mon prénom"
+              required
             />
           </div>
         </div>
@@ -226,6 +232,7 @@
             class="form-control"
             id="tel"
             placeholder="0123456789"
+            required
           />
         </div>
 
@@ -236,6 +243,7 @@
             class="form-control"
             id="email"
             placeholder="abc@gmail.com"
+            required
           />
         </div>
 
@@ -255,8 +263,13 @@
           >
         </div>
         <div class="form-check">
-          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
-          <label class="form-check-label" for="exampleCheck1"
+          <input
+            type="checkbox"
+            class="form-check-input"
+            id="exampleCheck1"
+            required
+          />
+          <label class="form-check-label font-weight-bold" for="exampleCheck1"
             >J'accepte les conditions</label
           >
         </div>
@@ -293,15 +306,19 @@
         </ul>
       </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="js/OwlCarousel2/dist/owl.carousel.js"></script>
-    <script src="js/script1.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script1.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"

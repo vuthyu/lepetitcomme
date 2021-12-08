@@ -158,8 +158,15 @@ h1 {
   display: flex;
   height: auto;
 }
+.actualites {
+  display: flex;
+  flex-wrap: wrap;
+}
 .tailleimage {
   width: 60%;
+}
+.tailleimage2 {
+  width: 90%;
 }
 .image {
   border: 1px solid lightgrey;
@@ -176,6 +183,11 @@ h1 {
 }
 .panier2 {
   display: flex;
+}
+.paiement_securise {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* carte google responsive */
 #carte {
@@ -216,6 +228,7 @@ footer {
 footer li {
   display: inline;
 }
+
 .piedpage {
   display: flex;
   justify-content: center;
@@ -248,9 +261,8 @@ a.pied:hover {
     text-shadow: 1px 1px 3px rgb(68, 139, 2);
   }
   .conteneur {
-    /* la zone de contenu blanche passe en pleine largeur donc 100% */
     width: 100%;
-    /* on a la propriété min-width:700px  plus haut qui nous bloque donc on l'annule en la mettant à 0px */
+
     min-width: 0px;
     display: flex;
     padding: 0;
@@ -267,30 +279,12 @@ a.pied:hover {
     width: 100%;
     text-align: center;
   }
-
   .bouton {
     margin: auto 5px 15px 2px;
   }
 }
 /* 900px */
 @media screen and (max-width: 900px) {
-  footer li {
-    display: block;
-  }
-  .item2 {
-    margin: 3px;
-    font-size: 1em;
-  }
-  a.pied {
-    color: white;
-  }
-  .piedpage {
-    display: block;
-    text-align: center;
-  }
-}
-/* 798px */
-@media screen and (max-width: 768px) {
   .logo {
     color: rgb(247, 243, 243);
     font-family: "Italianno", cursive;
@@ -331,6 +325,27 @@ a.pied:hover {
     padding: 1px 2px 1px 2px;
     box-shadow: 1px 1px 8px #6b705c;
   }
+  .corps {
+    padding-top: 220px;
+  }
+
+  footer li {
+    display: block;
+  }
+  .item2 {
+    margin: 3px;
+    font-size: 1em;
+  }
+  a.pied {
+    color: white;
+  }
+  .piedpage {
+    display: block;
+    text-align: center;
+  }
+}
+/* 768px */
+@media screen and (max-width: 768px) {
   .navbar-nav {
     background-color: rgb(161, 235, 26);
     text-align: center;
@@ -354,8 +369,8 @@ a.pied:hover {
   }
 }
 
-/* 461px */
-@media screen and (max-width: 461px) {
+/* 480px */
+@media screen and (max-width: 480px) {
   .logo {
     color: rgb(247, 243, 243);
     font-family: "Italianno", cursive;

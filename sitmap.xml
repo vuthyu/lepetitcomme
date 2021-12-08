@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>http://www.uvisite.free.fr/index.html</loc>
+    <lastmod>2021-12-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>http://www.uvisite.free.fr/articles_hommes.html</loc>
+    <lastmod>2021-10-05</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>http://www.uvisite.free.fr/articles_femmes.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+  <url>
+    <loc>http://www.uvisite.free.frcontact.html</loc>
+    <lastmod>2021-10-05</lastmod>
+  </url>
+</urlset>

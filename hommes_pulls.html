@@ -18,20 +18,26 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="js/jquery-ui/jquery-ui.structure.min.css"
+      href=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="js/jquery-ui/jquery-ui.theme.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css"
+    />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
     />
     <link
       rel="stylesheet"
-      href="js/OwlCarousel2/dist/assets/owl.carousel.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
     />
     <link
       rel="stylesheet"
-      href="js/OwlCarousel2/dist/assets/owl.theme.default.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
     />
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 
@@ -56,21 +62,20 @@
           </div>
 
           <div class="item1">
-            <form>
+            <form id="formulaire">
               <input
                 type="text"
-                id="rechercher"
+                class="produit"
                 placeholder=" Rechercher un article"
                 name="rechercher"
+                title="valider pour confirmer la rechercher"
               />
-              <button class="bouton" type="submit" title="rechercher">
-                RECHERCHER
-              </button>
             </form>
           </div>
 
           <div class="item1">
             <a class="bouton" href="moncompte.html">Mon compte</a>
+            <a class="bouton" href="mescommandes.html">Mes commandes</a>
             <a class="bouton" href="panier.html">PANIER</a>
           </div>
         </div>
@@ -115,17 +120,17 @@
                     <a class="dropdown-item" href="hommes_pantalons.html">
                       Pantalons
                     </a>
-                    <a class="dropdown-item" href="hommes_tshirts.html">
-                      T-Shirt
-                    </a>
-                    <a class="dropdown-item" href="hommes_manteaux.html">
-                      Manteaux
-                    </a>
                     <a class="dropdown-item" href="hommes_chemises.html">
                       Chemises
                     </a>
+                    <a class="dropdown-item" href="hommes_tshirts.html">
+                      T-Shirt
+                    </a>
                     <a class="dropdown-item" href="hommes_pulls.html">
                       Pulls
+                    </a>
+                    <a class="dropdown-item" href="hommes_manteaux.html">
+                      Manteaux
                     </a>
                   </div>
                 </li>
@@ -197,6 +202,7 @@
     <!-- corps de la page-->
     <main class="fondblanc">
       <div class="corps"><h1>Pulls Hommes</h1></div>
+
       <!-- article 1 -->
       <div class="articles">
         <div class="image">
@@ -212,26 +218,34 @@
             Pull col v cachemire homme de très haute qualité fabriqué en France.
             Disponible en plusieurs tailles et coloris.
           </p>
-          <label for="couleur">Choix Couleur</label><br />
-          <select class="choixcouleur" name="couleur" id="couleur">
-            <option value="bleu">bleu</option>
-            <option value="rouge">rouge</option>
-            <option value="ver">vert</option>
-            <option value="noir">noir</option></select
+          <label for="couleur_pull_col_v_homme">Choix Couleur</label><br />
+          <select
+            class="choixcouleur"
+            name="couleur"
+            id="couleur_pull_col_v_homme"
+          >
+            <option value="bleu_pull_col_v_homme">bleu</option>
+            <option value="rouge_pull_col_v_homme">rouge</option>
+            <option value="ver_pull_col_v_homme">vert</option>
+            <option value="noir_pull_col_v_homme">noir</option></select
           ><br /><br />
-          <label for="taille">Choix taille</label><br />
-          <select class="choixtaille" name="taille" id="taille">
-            <option value="taille1">XS</option>
-            <option value="taille2">S</option>
-            <option value="taille3">M</option>
-            <option value="taille4">L</option>
-            <option value="taille5">XL</option></select
+          <label for="taille_pull_col_v_homme">Choix taille</label><br />
+          <select
+            class="choixtaille"
+            name="taille"
+            id="taille_pull_col_v_homme"
+          >
+            <option value="taille1_pull_col_v_homme">XS</option>
+            <option value="taille2_pull_col_v_homme">S</option>
+            <option value="taille3_pull_col_v_homme">M</option>
+            <option value="taille4_pull_col_v_homme">L</option>
+            <option value="taille5_pull_col_v_homme">XL</option></select
           ><br /><br />
 
           <button
             class="btn btn-success margintop"
             type="submit"
-            id="acheter"
+            id="acheter_pull_col_v_homme"
             onclick="ajouter_panier()"
           >
             Acheter
@@ -254,25 +268,33 @@
             Pull col rond homme, de très haute qualité fabriqué en France.
             Disponible en plusieurs tailles et coloris.
           </p>
-          <label for="couleur">Choix Couleur</label><br />
-          <select class="choixcouleur" name="couleur" id="couleur">
-            <option value="gris">gris</option>
-            <option value="bleu">bleu</option>
-            <option value="noir">noir</option></select
+          <label for="couleur_pull_col_rond_homme1">Choix Couleur</label><br />
+          <select
+            class="choixcouleur"
+            name="couleur"
+            id="couleur_pull_col_rond_homme1"
+          >
+            <option value="gris_pull_col_rond_homme1">gris</option>
+            <option value="bleu_pull_col_rond_homme1">bleu</option>
+            <option value="noir_pull_col_rond_homme1">noir</option></select
           ><br /><br />
-          <label for="taille">Choix taille</label><br />
-          <select class="choixtaille" name="taille" id="taille">
-            <option value="taille1">XS</option>
-            <option value="taille2">S</option>
-            <option value="taille3">M</option>
-            <option value="taille4">L</option>
-            <option value="taille5">XL</option></select
+          <label for="taille_pull_col_rond_homme1">Choix taille</label><br />
+          <select
+            class="choixtaille"
+            name="taille"
+            id="taille_pull_col_rond_homme1"
+          >
+            <option value="taille1_pull_col_rond_homme1">XS</option>
+            <option value="taille2_pull_col_rond_homme1">S</option>
+            <option value="taille3_pull_col_rond_homme1">M</option>
+            <option value="taille4_pull_col_rond_homme1">L</option>
+            <option value="taille5_pull_col_rond_homme1">XL</option></select
           ><br /><br />
 
           <button
             class="btn btn-success margintop"
             type="submit"
-            id="acheter"
+            id="acheter_pull_col_rond_homme1"
             onclick="ajouter_panier()"
           >
             Acheter
@@ -309,15 +331,19 @@
         </ul>
       </div>
     </footer>
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery-ui/jquery-ui.min.js"></script>
-    <script src="js/OwlCarousel2/dist/owl.carousel.js"></script>
-    <script src="js/script1.js"></script>
     <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+      integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/script1.js"></script>
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"

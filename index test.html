@@ -18,18 +18,12 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css"
+      href="js/jquery-ui/jquery-ui.structure.min.css"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.structure.min.css"
-    />
-
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.theme.min.css"
+      href="js/jquery-ui/jquery-ui.theme.min.css"
     />
     <link
       rel="stylesheet"
@@ -55,28 +49,50 @@
         <div class="conteneur">
           <div class="item1">
             <p class="logo font-effect-fire">Le Petit COMMERCE</p>
-            <p>
-              <a class="bouton" href="">Français</a>
-              <a class="bouton" href="">English</a>
+            
+          </div>
+         
+      
+
+        <div class="item1">
+          <p>
+            
             </p>
-          </div>
+          <form>
+            <input
+              type="text"
+              id="rechercher"
+              placeholder=" Rechercher un article"
+              name="rechercher"
+            />
+            <button class="bouton" type="submit" title="rechercher">
+              RECHERCHER
+            </button>
+          </form>
+        </div>
 
+        <div class="item1">
+          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+            <label for="langue"><img src="./img/drapeau.jpg"></label>
+            <option value="1">Mon compte</option>
+            <option value="2">Mes commandes</option>
+           
+          </select>
+          <a class="bouton" href="panier.html">PANIER</a>
+          <select class="form-select form-select-lg mb-3 langue" aria-label=".form-select-lg example">
+            <label for="langue"><img src="./img/drapeau.jpg"></label>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+           
+          </select>
+        </div>
+      </div>
+          
           <div class="item1">
-            <form id="formulaire">
-              <input
-                type="text"
-                class="produit"
-                placeholder=" Rechercher un article"
-                name="rechercher"
-                title="valider pour confirmer la rechercher"
-              />
-            </form>
+            
           </div>
-
-          <div class="item1">
-            <a class="bouton" href="moncompte.html">Mon compte</a>
-            <a class="bouton" href="mescommandes.html">Mes commandes</a>
-            <a class="bouton" href="panier.html">PANIER</a>
+              </div>
+            </nav>
           </div>
         </div>
         <!-- fin de l'en-tête -->
@@ -199,72 +215,52 @@
       <!-- fin barre de navigation -->
     </header>
 
-    <!-- Formulaire de réservation -->
-    <main class="fondblanc">
-      <div class="corps"><h1>Qui sommes-nous ?</h1></div>
-      <div class="mentions">
-        <p>
-          Le petit Commerce est une SA au capital de 100 000 euros, dont le
-          siège social est situé 5 Avenue Anatole France 75007 Paris, France
-          inscrite au Registre du Commerce et des Sociétés de Paris Paris B 421
-          938 8618, SIRET 4210938086100 , N° TVA : FR 22 424 761 506.
+    <!-- corps de la page-->
+    <main class="fondvert">
+      <div class="corps">
+        <p class="texte">Achetez vos vêtments en ligne</p>
+        <p class="texte2">
+          100% sécurisé, livraison rapide, satisfait ou remboursé / Appel
+          gratuit 01 02 03 04 05
         </p>
 
-        <p class="titremoyen">Notre activité</p>
-        <p>
-          Nous proposons de la vente en ligne. Nous avons aussi des boutiques
-          situées dans les grandes villes de France pour vous proposer, si vous
-          le souhaitez, réaliser des achats sur place.
-        </p>
-        <p class="titremoyen">Nos engagements qualité</p>
-
-        <p>
-          En tant qu’entreprise française, nous sommes sensibles aux équilibres
-          économiques et sociaux du territoire. C’est notamment pourquoi nous
-          valorisons les entreprises Made in France ainsi que les 5 000 TPE/PME
-          françaises intégrées à notre marketplace, à qui nous offrons une
-          vitrine nationale, voire européenne. Nous adhérons également depuis
-          2019 à l’alliance européenne des plateformes d’e-commerce, avec nos
-          partenaires roumains, italiens et allemands, représentant un marché
-          potentiel de 230 millions de consommateurs.
-        </p>
-        <p class="titremoyen">Nos produits</p>
-
-        <p>
-          Nous commercialisons des produits authentiques, nous surveillons la
-          qualité et l'origine de nos articles.<br />
-          La contrefaçon est notre principal ennemi.<br />Nous mettons à votre
-          disposition les produits suivant :
-        </p>
-        <p>Pour les hommes :</p>
-        <ul>
-          <li><a href="hommes_pantalons.html">Pantalons</a></li>
-          <li><a href="hommes_chemises.html">Chemise</a></li>
-          <li><a href="hommes_tshirts.html">T-shirts</a></li>
-          <li><a href="hommes_pulls.html">Pulls</a></li>
-          <li><a href="hommes_manteaux.html">Manteaux</a></li>
-        </ul>
-        <p>Pour les femmes :</p>
-        <ul>
-          <li><a href="femmes_pantalons.html">Pantalons</a></li>
-          <li><a href="femmes_pulls.html">Pulls</a></li>
-          <li><a href="femmes_manteaux.html">Manteaux</a></li>
-          <li><a href="femmes_jupes.html">Jupes</a></li>
-          <li><a href="femmes_robes.html">Robes</a></li>
-        </ul>
-
-        <p class="titremoyen">Notre mode de livraison</p>
-        <p>
-          Pas toujours à la maison ? Facile de récupérer ses commandes dans nos
-          points de livraison partout en France, le plus souvent à deux pas de
-          chez soi. En plus des 22 000 points de livraison UVISITE avec des
-          partenaires de confiance, au sein desquels sont déposés quelque 30
-          millions de colis par an, le réseau partenaire Agrikolis permet de
-          faciliter les livraisons en milieu rural, en transformant une partie
-          des locaux des fermes adhérentes en lieux de stockage.
-        </p>
-        <p class="titremoyen">Facilités de paiements</p>
-        <p><img src="./img/paiements.png" alt="paiement" width="100%" /></p>
+        <div class="owl-carousel owl-theme">
+          <div>
+            <img
+              src="./img/actualite_femme.png"
+              alt="image1"
+              onclick='document.location.href="actualite_femme.html";'
+            />
+          </div>
+          <div>
+            <img
+              src="./img/actualite_homme.png"
+              alt="image1"
+              onclick='document.location.href="actualite_homme.html";'
+            />
+          </div>
+          <div>
+            <img
+              src="./img/actualite_femme2.png"
+              alt="image1"
+              onclick='document.location.href="actualite_femme.html";'
+            />
+          </div>
+          <div>
+            <img
+              src="./img/actualite_homme2.png"
+              alt="image2"
+              onclick='document.location.href="actualite_homme.html";'
+            />
+          </div>
+          <div>
+            <img
+              src="./img/actualite_femme3.png"
+              alt="image2"
+              onclick='document.location.href="actualite_femme.html";'
+            />
+          </div>
+        </div>
       </div>
     </main>
 
@@ -285,17 +281,20 @@
             <a class="pied" href="plandusite.html">PLAN DU SITE</a>
           </li>
           <li class="item2">
-            <a class="pied" href="newsletters.html">NEWS LETTERS</a>
+            <a class="pied" href="newsletters.html">NEWSLETTER</a>
           </li>
           <li class="item2">
             <a class="pied" href="partager.html">PARTAGER</a>
           </li>
           <li class="item2">
-            <a class="pied" href="imprimer.html">IMPRIMER</a>
+            <a class="pied" href="imprimer.html" onclick="imprimer()"
+              >IMPRIMER</a
+            >
           </li>
         </ul>
       </div>
     </footer>
+
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
