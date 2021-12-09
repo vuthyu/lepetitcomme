@@ -9,16 +9,74 @@ body {
 
 /* en-tête */
 .logo {
-  color: rgb(247, 243, 243);
+  color: white;
   font-family: "Italianno", cursive;
   /* font-family: 'Lobster', cursive; */
-  padding: 0;
+  padding: 0 25px 0 15px;
   font-size: 55px;
   font-weight: bolder;
-  font-style: oblique;
   text-shadow: 1px 1px 3px rgb(68, 139, 2);
 }
+/* dégradé de couleur de fond du logo */
+.font-effect-fire {
+  border: 2px solid rgb(161, 235, 120);
+  background-color: rgb(161, 235, 120);
+  box-shadow: 2px 2px 15px rgb(161, 235, 26);
+  border-radius: 65px 0 65px 0;
 
+  background: linear-gradient(216deg, #adf411, #faae00);
+  background-size: 400% 400%;
+
+  -webkit-animation: Monlogo 6s ease infinite;
+  -moz-animation: Monlogo 6s ease infinite;
+  -o-animation: Monlogo 6s ease infinite;
+  animation: Monlogo 6s ease infinite;
+}
+/* animation du dégradé de couleur */
+@-webkit-keyframes Monlogo {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@-moz-keyframes Monlogo {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@-o-keyframes Monlogo {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
+@keyframes Monlogo {
+  0% {
+    background-position: 94% 0%;
+  }
+  50% {
+    background-position: 7% 100%;
+  }
+  100% {
+    background-position: 94% 0%;
+  }
+}
 /* conteneur de l'en-tête */
 .conteneur {
   padding: 15px 15px 15px 25px;
@@ -174,7 +232,15 @@ h1 {
 .actualites {
   display: flex;
   flex-wrap: nowrap;
+  justify-content: space-between;
 }
+.actualite {
+  border: 1px solid lightgray;
+  margin: 1px;
+  padding: 2px;
+  text-align: left;
+}
+
 .tailleimage {
   width: 60%;
 }
@@ -184,6 +250,7 @@ h1 {
 .image {
   border: 1px solid lightgrey;
   flex: 0 1 55%;
+  margin: 0 2px 0 0;
 }
 .taille_video {
   width: 640px;
@@ -245,11 +312,11 @@ footer {
 footer li {
   display: inline;
 }
-
 .piedpage {
   display: flex;
   margin: 0 auto;
   padding: 0;
+  justify-content: space-around;
 }
 .item2 {
   font-size: 16px;
@@ -358,15 +425,19 @@ a.pied:hover {
     padding-top: 220px;
   }
 
-  footer li {
-    display: block;
-  }
   .item2 {
-    margin: 3px;
+    margin: 0;
+    padding: 0;
     font-size: 1em;
   }
   a.pied {
     color: white;
+  }
+  ul {
+    list-style-type: none;
+  }
+  footer li {
+    display: block;
   }
   .piedpage {
     display: block;
@@ -419,6 +490,7 @@ a.pied:hover {
     font-style: oblique;
     text-shadow: 1px 1px 3px rgb(68, 139, 2);
   }
+
   .texte {
     color: white;
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;

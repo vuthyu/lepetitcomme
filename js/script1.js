@@ -23,6 +23,10 @@ $("div.owl-carousel").owlCarousel({
   },
 });
 
+function imprimer() {
+  alert("vous avez lancé une impression");
+}
+
 // Ajout d'un article au panier
 function ajouter_panier() {
   alert("l'article est dans le panier");
