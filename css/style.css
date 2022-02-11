@@ -22,7 +22,7 @@ body {
   border: 2px solid rgb(161, 235, 120);
   background-color: rgb(161, 235, 120);
   box-shadow: 2px 2px 15px rgb(161, 235, 26);
-  border-radius: 65px 0 65px 0;
+  border-radius: 8px;
 
   background: linear-gradient(216deg, #adf411, #faae00);
   background-size: 400% 400%;
@@ -81,7 +81,7 @@ body {
 .conteneur {
   padding: 15px 15px 15px 25px;
   border: none;
-  background-color: rgb(212, 214, 211);
+  background-color: rgb(51, 94, 51);
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -105,8 +105,8 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
   color: black;
-  background-color: rgb(161, 235, 26);
-  border: 1px solid rgb(161, 235, 26);
+  background-color: rgb(79, 170, 117);
+  border: 1px solid rgb(79, 170, 117);
   border-radius: 5px;
   padding: 2px 4px 2px 4px;
   height: 30px;
@@ -116,8 +116,8 @@ a.bouton {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 15px;
   color: black;
-  background-color: rgb(161, 235, 26);
-  border: 1px solid rgb(161, 235, 26);
+  background-color: rgb(99, 206, 144);
+  border: 1px solid rgb(79, 170, 117);
   border-radius: 5px;
   padding: 5px;
   box-shadow: 1px 1px 8px #6b705c;
@@ -125,7 +125,7 @@ a.bouton {
 a.bouton:hover {
   text-decoration: none;
   color: white;
-  border: 1px solid rgb(194, 252, 88);
+  border: 1px solid rgb(79, 170, 117);
 }
 
 /* champs de recherche */
@@ -139,10 +139,10 @@ input {
 /* navigation */
 .menu_nav {
   z-index: 2;
-  background-color: rgb(161, 235, 26);
+  background-color: rgb(240, 64, 64);
 }
 .navbar-nav {
-  background-color: rgb(161, 235, 26);
+  background-color: rgb(240, 64, 64);
   font-family: "Lobster", cursive;
   font-size: 1.2em;
   width: 100%;
@@ -156,7 +156,7 @@ input {
 }
 
 .navbar-nav .dropdown-menu a:hover {
-  background-color: rgb(161, 235, 26);
+  background-color: rgb(240, 64, 64);
   width: 100%;
 }
 
@@ -195,7 +195,7 @@ main {
 .fondvert {
   padding: 20px;
   text-align: center;
-  background-color: rgb(115, 124, 82);
+  background-color: rgb(19, 66, 39);
   width: auto;
   height: auto;
 }
@@ -232,12 +232,14 @@ h1 {
 .actualites {
   display: flex;
   flex-wrap: nowrap;
+  padding: 5px;
   justify-content: space-between;
 }
 .actualite {
   border: 1px solid lightgray;
-  margin: 1px;
-  padding: 2px;
+  box-shadow: 2px 2px 5px lightgrey;
+  margin: 8px;
+  padding: 5px;
   text-align: left;
 }
 
@@ -249,8 +251,10 @@ h1 {
 }
 .image {
   border: 1px solid lightgrey;
+  box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 8px;
   flex: 0 1 55%;
-  margin: 0 2px 0 0;
+  margin: 0 15px 0 0;
 }
 .taille_video {
   width: 640px;
@@ -258,6 +262,8 @@ h1 {
 }
 .detail {
   border: 1px solid lightgrey;
+  box-shadow: 2px 2px 10px lightgrey;
+  border-radius: 8px;
   padding: 10px;
   flex: 2 1 45%;
 }
@@ -306,7 +312,7 @@ h1 {
 
 /* pied de page */
 footer {
-  background-color: rgb(161, 235, 26);
+  background-color: rgb(10, 20, 14);
   margin: 0 auto;
 }
 footer li {
@@ -360,7 +366,7 @@ a.pied:hover {
     padding-top: 180px;
   }
   .navbar-nav {
-    background-color: rgb(161, 235, 26);
+    background-color: rgb(240, 64, 64);
     text-align: center;
   }
   .item1 {
@@ -404,8 +410,8 @@ a.pied:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     color: black;
-    background-color: rgb(161, 235, 26);
-    border: 1px solid rgb(161, 235, 26);
+    background-color: rgb(79, 170, 117);
+    border: 1px solid rgb(79, 170, 117);
     border-radius: 5px;
     padding: 1px 1px 1px 1px;
     height: 25px;
@@ -415,8 +421,8 @@ a.pied:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     color: black;
-    background-color: rgb(161, 235, 26);
-    border: 1px solid rgb(161, 235, 26);
+    background-color: rgb(79, 170, 117);
+    border: 1px solid rgb(79, 170, 117);
     border-radius: 5px;
     padding: 1px 2px 1px 2px;
     box-shadow: 1px 1px 8px #6b705c;
@@ -447,7 +453,7 @@ a.pied:hover {
 /* 768px */
 @media screen and (max-width: 768px) {
   .navbar-nav {
-    background-color: rgb(161, 235, 26);
+    background-color: rgb(240, 64, 64);
     text-align: center;
   }
   .corps {
@@ -519,7 +525,7 @@ a.pied:hover {
     font-size: 15px;
     color: black;
     background-color: rgb(161, 235, 26);
-    border: 1px solid rgb(158, 240, 6);
+    border: 1px solid rgb(161, 235, 26);
     border-radius: 5px;
     padding: 1px 2px 1px 2px;
     box-shadow: 1px 1px 8px #6b705c;
